@@ -1,0 +1,153 @@
+html,
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h3,
+footer {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.index-p {
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.res-nav {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #333333;
+}
+
+.res-nav ul,
+.res-nav a {
+  padding: 0;
+  margin: 0;
+}
+
+.res-nav a {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+}
+
+.res-nav a:hover,
+.res-nav a.active {
+  background: #65ad5d;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 100%;
+  background: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexcol {
+  text-align: center;
+  border: 1px solid rgb(99, 99, 99);
+}
+
+.flexcol h3,
+.flexcol p {
+  margin: 2px;
+  padding: 0;
+}
+
+.flexcol img {
+  width: 100%;
+}
+
+.t3-con {
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  flex-direction: column;
+}
+
+.t3-hf {
+  text-align: center;
+  background: #50a3e7;
+  padding: 5px;
+  flex: 0 1 100%;
+}
+
+.t3-main,
+.t3-side {
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px;
+}
+
+.t3-main {
+  background: #93be65;
+}
+
+.t3-side {
+  background: #7e7e7e;
+}
+
+/* For phones maybe */
+@media only screen and (min-width: 601px) {
+  .res-nav a {
+    float: left;
+  }
+
+  .flexcol {
+    width: 19%;
+  }
+
+  .t3-b {
+    display: flex;
+  }
+
+  .t3-main,
+  .t3-side {
+    height: 5rem;
+    line-height: 5rem;
+    flex: 0 1 50%;
+  }
+}
+
+/* For phones maybe */
+@media only screen and (max-width: 600px) {
+  .flexcol {
+    width: 100%;
+  }
+
+  .t3-main,
+  .t3-side {
+    flex: 0 1 100%;
+  }
+
+  .t3-main {
+    height: 5rem;
+    line-height: 5rem;
+    flex: 0 1 50%;
+  }
+
+  .t3-b {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
