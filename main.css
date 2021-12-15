@@ -13,9 +13,15 @@ footer {
 }
 
 .index-p {
+  display: flex;
   height: 100vh;
-  line-height: 100vh;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.index-p h1 {
+  line-height: 3rem;
   vertical-align: middle;
 }
 
